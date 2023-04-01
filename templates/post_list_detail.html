@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style_detail.css'%}">
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <title>Лак</title>
+</head>
+<body>
+<div class="body">
+
+
+    <h1 class="title">{{post_id.title}}</h1>
+    <div class="conteiner">
+    <img src="{{post_id.image.url}}" alt="" class="image_detail">
+    <div class="desc"><p >{{post_id.description}}</p></div>
+
+</div>
+    <p class="date">{{post_id.created_date}}</p>
+</div>
+</body>
+</html>
